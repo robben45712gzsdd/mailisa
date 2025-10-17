@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  --color-primary: #e1006e; /* Hồng đặc trưng Mailisa */
+  --color-primary: #e1006e;
+  /* Hồng đặc trưng Mailisa */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #7f143d;
 }
 
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
 @layer base {
   .bg-primary {
     background-color: var(--color-primary);
   }
+  
   .text-primary {
     color: var(--color-primary);
   }
+  
   .border-primary {
     border-color: var(--color-primary);
   }
@@ -23,10 +32,61 @@
     opacity: 0;
     transform: translateY(5px);
   }
+  
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.service_item .btn {
+  width: calc(50% - .417rem);
+  box-shadow: 3px 3px 3px 0 rgba(91, 12, 74, .3);
+  padding-left: .521rem;
+  padding-right: .521rem;
+  height: 2.34375rem;
+  box-sizing: border-box;
+}
+
+.link_btn {
+  font-size: .833rem;
+  line-height: 1.354rem;
+  font-style: italic;
+  border: 1px solid #3c1026;
+  -webkit-border-radius: 1.042rem;
+  -moz-border-radius: 1.042rem;
+  border-radius: 1.042rem;
+  width: max-content;
+  padding: 0 15px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3c1026;
+  background: #fff;
+}
+
+.border-secondary {
+  border-width: 3px;
+  border-color: var(--color-text-secondary);
+}
+
+.text_gradient {
+  background: -webkit-linear-gradient(0deg, #3c1026 10%, #d22d70 50%, #c45780 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
 }
 
 .animate-fade-in {
