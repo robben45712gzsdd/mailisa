@@ -177,28 +177,28 @@ export default function Header() {
   const [openSubMenu, setOpenSubMenu] = useState(null);
 
   return (
-    <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="mx-auto max-w-[1400px] flex flex-col items-center px-8">
+    <header className="top-0 left-0 z-50 fixed bg-white shadow-md w-full">
+      <div className="flex flex-col items-center mx-auto px-8 max-w-[1400px]">
         <div
-          className="w-full text-center bg-no-repeat bg-contain bg-center h-[3.802rem] flex justify-center items-center"
+          className="flex justify-center items-center bg-contain bg-no-repeat bg-center w-full h-[3.802rem] text-center"
           style={{ backgroundImage: `url(${logoBg})` }}
         >
           <LogoIcon fill="#fff" className="w-[80px] h-auto" />
         </div>
 
-        <nav className="relative border-t border-primary-dark w-max mx-auto">
-          <ul className="flex items-center gap-6 p-4 uppercase font-bold">
+        <nav className="relative mx-auto border-primary-dark border-t w-max">
+          <ul className="flex items-center gap-6 p-4 font-bold uppercase">
             {menuData.map((menu, i) => (
               <li
                 key={i}
-                className="relative group"
+                className="group relative"
                 onMouseEnter={() => setOpenMenu(i)}
                 onMouseLeave={() => {
                   setOpenMenu(null);
                   setOpenSubMenu(null);
                 }}
               >
-                <div className="flex items-center gap-1 cursor-pointer transition">
+                <div className="flex items-center gap-1 transition cursor-pointer">
                   <NavLink
                     to={menu.href}
                     className={({ isActive }) =>
@@ -238,8 +238,7 @@ export default function Header() {
                 {menu.children && openMenu === i && (
                   <ul
                     style={{ backgroundImage: `url(${logoBgSubMenu})` }}
-                    className="absolute top-full left-0 shadow-lg rounded-md mt-3 -translate-y-[1px] w-64 py-2 border border-gray-100 animate-fade-in z-50
-               before:content-[''] before:absolute before:top-[-12px] before:left-0 before:w-full before:h-4 before:bg-transparent"
+                    className="top-[calc(100%+1rem)] left-0 z-50 absolute shadow-lg mt-0 py-2 border border-gray-100 rounded-md w-64 -translate-y-[1px] animate-fade-in"
                   >
                     {menu.children.map((submenu, j) => (
                       <li
@@ -280,7 +279,7 @@ export default function Header() {
                             style={{
                               backgroundImage: `url(${logoBgSubMenu})`,
                             }}
-                            className="absolute top-0 left-full shadow-lg rounded-md w-56 py-2 px-4 border border-gray-100 animate-fade-in"
+                            className="top-0 left-full absolute shadow-lg px-4 py-2 border border-gray-100 rounded-md w-56 animate-fade-in"
                           >
                             {submenu.children.map((child, k) => (
                               <li key={k}>
