@@ -85,9 +85,9 @@ html {
   border-color: var(--color-text-secondary);
 }
 
-.text_gradient {
+.text-gradient {
   background: -webkit-linear-gradient(0deg, #3c1026 10%, #d22d70 50%, #c45780 100%);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

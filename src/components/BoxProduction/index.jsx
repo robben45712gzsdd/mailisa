@@ -18,7 +18,7 @@ export default function BoxProduction({
 
       {/* Content Section */}
       <div className="space-y-4 p-6">
-        <h3 className="font-bold text-secondary text-2xl text-center uppercase tracking-wide text_gradient">
+        <h3 className="font-bold text-gradient text-secondary text-2xl text-center uppercase tracking-wide">
           {title}
         </h3>
 
