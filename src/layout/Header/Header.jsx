@@ -238,7 +238,8 @@ export default function Header() {
                 {menu.children && openMenu === i && (
                   <ul
                     style={{ backgroundImage: `url(${logoBgSubMenu})` }}
-                    className="absolute top-full left-0 shadow-lg rounded-md mt-0 -translate-y-[1px] w-64 py-2 border border-gray-100 animate-fade-in z-50"
+                    className="absolute top-full left-0 shadow-lg rounded-md mt-3 -translate-y-[1px] w-64 py-2 border border-gray-100 animate-fade-in z-50
+               before:content-[''] before:absolute before:top-[-12px] before:left-0 before:w-full before:h-4 before:bg-transparent"
                   >
                     {menu.children.map((submenu, j) => (
                       <li
