@@ -167,7 +167,7 @@ const Footer = () => {
           }
         `}
       </style>
-      <div className="max-w-[1400px] mx-auto">
+      <div className="container mx-auto">
         {/* Khung chứa tiêu đề + danh sách chi nhánh */}
         <div className="border border-white rounded-[15px] py-15 px-40">
           {/* Tiêu đề + nút */}
