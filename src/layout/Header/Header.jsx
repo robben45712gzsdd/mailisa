@@ -1,32 +1,176 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import logoBg from "@/assets/imgs/bg_logo.png";
+import logoBgSubMenu from "@/assets/imgs/bg_sub_menu.jpg";
+import { LogoIcon } from "@/assets/icons";
+
 export default function Header() {
   const menuData = [
-    { label: "Trang chủ", href: "/" },
-    { label: "Giới thiệu", href: "/about" },
     {
-      label: "Dịch vụ",
+      label: "Giới thiệu",
+      href: "/",
       children: [
         {
-          label: "Phun xăm thẩm mỹ",
+          label: "LỊCH SỬ HÌNH THÀNH PHÁT TRIỂN MAILISA",
+          href: "/lich-su-hinh-thanh-phat-trien-mailisa/",
           children: [
-            { label: "Phun môi collagen", href: "/services/phun-moi" },
-            { label: "Điêu khắc chân mày", href: "/services/dieu-khac" },
-            { label: "Phun mí mắt", href: "/services/phun-mi" },
+            {
+              label: "ENGLISH VERSION",
+              href: "/history-of-mailisa-formation/",
+            },
           ],
         },
         {
-          label: "Điều trị da",
-          children: [
-            { label: "Trị nám", href: "/services/tri-nam" },
-            { label: "Trị mụn", href: "/services/tri-mun" },
-          ],
+          label: "QUÁ TRÌNH THIỆN NGUYỆN MAILISA",
+          href: "/qua-trinh-thien-nguyen-mailisa/",
         },
       ],
     },
-    { label: "Tin tức", href: "/news" },
-    { label: "Liên hệ", href: "/contact" },
+    {
+      label: "Phun màu thẩm mỹ",
+      href: "/phun-mau-tham-my/",
+      children: [
+        {
+          label: "Phun Mày Brow Couture",
+          href: "/phun-xam-tham-my/phun-may-brow-couture/",
+        },
+        {
+          label: "Phun Môi SILK LIP",
+          href: "/phun-moi-mailisa/",
+        },
+        {
+          label: "Phun mí mở tròng",
+          href: "/phun-xam-tham-my/phun-mi-mo-trong/",
+        },
+        {
+          label: "Xóa sửa mày",
+          href: "/phun-xam-tham-my/xoa-sua-may/",
+        },
+        {
+          label: "Xóa sửa môi",
+          href: "/phun-xam-tham-my/xoa-sua-moi/",
+        },
+        {
+          label: "Xóa sửa mí",
+          href: "/phun-xam-tham-my/xoa-sua-mi/",
+        },
+      ],
+    },
+    {
+      label: "Điều trị da",
+      href: "/dieu-tri-da-tai-tham-my-vien-mailisa/",
+      children: [
+        {
+          label: "Điều trị nám đinh",
+          href: "/dieu-tri-da-tai-tham-my-vien-mailisa/dieu-tri-nam-dinh/",
+        },
+        {
+          label: "Điều trị nám mảng",
+          href: "/dieu-tri-da-tai-tham-my-vien-mailisa/dieu-tri-nam-mang/",
+        },
+        {
+          label: "Điều trị đồi mồi",
+          href: "/dieu-tri-da-tai-tham-my-vien-mailisa/dieu-tri-doi-moi-cong-nghe/",
+        },
+        {
+          label: "Điều trị bớt sắc tố",
+          href: "/dieu-tri-da-tai-tham-my-vien-mailisa/dieu-tri-bot-sac-to-cnc/",
+        },
+        {
+          label: "Điều trị sẹo rỗ",
+          href: "/dieu-tri-da-tai-tham-my-vien-mailisa/dieu-tri-seo-ro-cong-nghe-cao/",
+        },
+        {
+          label: "Điều trị tàn nhang",
+          href: "/dieu-tri-da-tai-tham-my-vien-mailisa/dieu-tri-tan-nhang/",
+        },
+        {
+          label: "Điều trị da mụn",
+          href: "/dieu-tri-da-tai-tham-my-vien-mailisa/dieu-tri-da-mun-cong-nghe-cao/",
+        },
+        { label: "Xóa Nốt Ruồi", href: "/xoa-not-ruoi/" },
+        { label: "Xóa Mụn Thịt", href: "/xoa-mun-thit/" },
+      ],
+    },
+    {
+      label: "Phẫu thuật",
+      href: "/phau-thuat-tham-my/",
+      children: [
+        {
+          label: "Nâng cung chân mày Perfect Form",
+          href: "/phau-thuat-tham-my/nang-cung-chan-may/",
+        },
+        {
+          label: "Tạo hình mắt 2 mí Perfect Line",
+          href: "/phau-thuat-tham-my/tao-hinh-mat-2-mi/",
+        },
+        {
+          label: "Khâu tạo hình mắt 2 mí",
+          href: "/phau-thuat-tham-my/khau-tao-hinh-2-mi/",
+        },
+        {
+          label: "Phẫu thuật cắt da dư lấy bọng mỡ mi dưới",
+          href: "/phau-thuat-tham-my/cat-da-du-mi-duoi/",
+        },
+        {
+          label: "Phẫu thuật Nâng mũi",
+          href: "/phau-thuat-tham-my/nang-mui/",
+        },
+        {
+          label: "Phẫu thuật thu gọn cánh mũi",
+          href: "/phau-thuat-tham-my/cuon-canh-mui/",
+        },
+        {
+          label: "Căng Da Mặt Siết Cơ Bằng Chỉ",
+          href: "/cang-da-mat-siet-co-bang-chi-mailisa/",
+        },
+        {
+          label: "Dịch Vụ Làm Đẹp Bằng Filler",
+          href: "/lam-dep-bang-filler/",
+        },
+        {
+          label: "Dịch Vụ Làm Đẹp Bằng Botox",
+          href: "/lam-dep-bang-botox/",
+        },
+        {
+          label: "Thu gọn môi dày",
+          href: "/phau-thuat-tham-my/thu-gon-moi-day/",
+        },
+        {
+          label: "Độn cằm",
+          href: "/phau-thuat-tham-my/don-cam/",
+        },
+      ],
+    },
+    {
+      label: "Mỹ phẩm",
+      href: "/nhom-san-pham-mailisa/",
+      children: [
+        {
+          label: "Tất Cả Sản Phẩm Mailisa",
+          href: "/san-pham-mailisa/",
+        },
+      ],
+    },
+    {
+      label: "Đào tạo",
+      href: "/trang-dao-tao/",
+      children: [
+        {
+          label: "Chăm sóc da",
+          href: "/trang-dao-tao/dao-tao-cham-soc-da/",
+        },
+        {
+          label: "Phun màu thẩm mỹ",
+          href: "/trang-dao-tao/dao-tao-phun-mau-tham-my/",
+        },
+      ],
+    },
+    {
+      label: "Liên hệ",
+      href: "/dia-chi-mailisa-thong-tin-lien-he/",
+    },
   ];
 
   const [openMenu, setOpenMenu] = useState(null);
@@ -34,13 +178,16 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="container mx-auto flex items-center justify-between px-8 py-3">
-        <Link to="/" className="text-2xl font-bold text-primary">
-          Mailisa
-        </Link>
+      <div className="mx-auto max-w-[1400px] flex flex-col items-center px-8">
+        <div
+          className="w-full text-center bg-no-repeat bg-contain bg-center h-[3.802rem] flex justify-center items-center"
+          style={{ backgroundImage: `url(${logoBg})` }}
+        >
+          <LogoIcon fill="#fff" className="w-[80px] h-auto" />
+        </div>
 
-        <nav className="relative">
-          <ul className="flex items-center gap-6">
+        <nav className="relative border-t border-primary-dark w-max mx-auto">
+          <ul className="flex items-center gap-6 p-4 uppercase font-bold">
             {menuData.map((menu, i) => (
               <li
                 key={i}
@@ -51,53 +198,101 @@ export default function Header() {
                   setOpenSubMenu(null);
                 }}
               >
-                <div className="flex items-center gap-1 cursor-pointer text-gray-800 hover:text-primary transition">
-                  {menu.href ? (
-                    <Link to={menu.href}>{menu.label}</Link>
-                  ) : (
-                    <>
-                      <span>{menu.label}</span>
-                      {menu.children && (
-                        <ExpandMoreIcon
-                          fontSize="small"
-                          className="mt-[2px] w-4 h-4"
-                        />
-                      )}
-                    </>
-                  )}
+                <div className="flex items-center gap-1 cursor-pointer transition">
+                  <NavLink
+                    to={menu.href}
+                    className={({ isActive }) =>
+                      `relative group flex items-center gap-1 transition-colors duration-200
+                        after:content-[''] after:absolute after:left-0 after:bottom-[-3px]
+                        after:h-[2px] after:w-0 after:bg-[var(--color-primary)] after:transition-all after:duration-300
+                        hover:after:w-full
+                        ${
+                          isActive
+                            ? "text-primary after:w-full"
+                            : "text-primary-dark hover-text-primary"
+                        }`
+                    }
+                  >
+                    {({ isActive }) => (
+                      <>
+                        {/* text label */}
+                        <span>{menu.label}</span>
+
+                        {/* icon */}
+                        {menu.children && (
+                          <ExpandMoreIcon
+                            fontSize="small"
+                            className={`mt-[2px] w-4 h-4 transform transition-transform duration-700 ease-in-out 
+              ${
+                isActive
+                  ? "text-primary rotate-0"
+                  : "text-primary-dark group-hover-text-primary group-hover:rotate-0 rotate-[-90deg]"
+              }`}
+                          />
+                        )}
+                      </>
+                    )}
+                  </NavLink>
                 </div>
 
                 {menu.children && openMenu === i && (
-                  <ul className="absolute top-full left-0 bg-white shadow-lg rounded-md mt-2 w-64 py-2 border border-gray-100 animate-fade-in">
+                  <ul
+                    style={{ backgroundImage: `url(${logoBgSubMenu})` }}
+                    className="absolute top-full left-0 shadow-lg rounded-md mt-0 -translate-y-[1px] w-64 py-2 border border-gray-100 animate-fade-in z-50"
+                  >
                     {menu.children.map((submenu, j) => (
                       <li
                         key={j}
-                        className="relative px-4 py-2 hover:bg-gray-50"
+                        className="relative px-4 py-2"
                         onMouseEnter={() => setOpenSubMenu(j)}
                         onMouseLeave={() => setOpenSubMenu(null)}
                       >
                         <div className="flex justify-between items-center">
-                          <span className="text-gray-800 font-medium hover:text-primary transition">
-                            {submenu.label}
-                          </span>
-                          {submenu.children && (
-                            <ExpandMoreIcon
-                              fontSize="small"
-                              className="rotate-[-90deg] text-gray-500 w-4 h-4"
-                            />
-                          )}
+                          <NavLink
+                            to={submenu.href}
+                            className={({ isActive }) =>
+                              `flex justify-between items-center w-full transition-colors duration-200 ${
+                                isActive
+                                  ? "text-primary"
+                                  : "text-white hover:text-yellow-400"
+                              }`
+                            }
+                          >
+                            {({ isActive }) => (
+                              <>
+                                <span>{submenu.label}</span>
+                                {submenu.children && (
+                                  <ExpandMoreIcon
+                                    fontSize="small"
+                                    className={`rotate-[-90deg] w-4 h-4 ${
+                                      isActive ? "text-primary" : "text-white"
+                                    }`}
+                                  />
+                                )}
+                              </>
+                            )}
+                          </NavLink>
                         </div>
 
                         {submenu.children && openSubMenu === j && (
-                          <ul className="absolute top-0 left-full bg-white shadow-lg rounded-md w-56 py-2 border border-gray-100 animate-fade-in">
+                          <ul
+                            style={{
+                              backgroundImage: `url(${logoBgSubMenu})`,
+                            }}
+                            className="absolute top-0 left-full shadow-lg rounded-md w-56 py-2 px-4 border border-gray-100 animate-fade-in"
+                          >
                             {submenu.children.map((child, k) => (
                               <li key={k}>
-                                <Link
+                                <NavLink
                                   to={child.href}
-                                  className="block px-4 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition"
+                                  className={({ isActive }) =>
+                                    `text-white hover:text-yellow-400 transition-colors duration-200 ${
+                                      isActive ? "text-primary" : ""
+                                    }`
+                                  }
                                 >
                                   {child.label}
-                                </Link>
+                                </NavLink>
                               </li>
                             ))}
                           </ul>
