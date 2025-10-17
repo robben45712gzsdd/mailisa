@@ -5,7 +5,7 @@
   /* Hồng đặc trưng Mailisa */
   --color-text-primary: #ffffff;
   --color-text-secondary: #7f143d;
-
+}
 @tailwind base;
 
 @tailwind components;
@@ -86,7 +86,7 @@ html {
 
 .text_gradient {
   background: -webkit-linear-gradient(0deg, #3c1026 10%, #d22d70 50%, #c45780 100%);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
