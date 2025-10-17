@@ -143,7 +143,7 @@ const menuFooter = [
 const Footer = () => {
   return (
     <footer
-      className="text-white py-15 px-5 relative"
+      className="text-white py-15 px-5 relative mt-10"
       style={{
         backgroundImage:
           "linear-gradient(to right, #3c1026 0%, #c72d70 45.5307%, #b94880 100%)",

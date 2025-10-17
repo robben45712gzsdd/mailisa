@@ -25,6 +25,7 @@ export default function BoxService({ title, description, image, link }) {
             text="Nhận tư vấn"
             link="/services/brow-couture"
             className="flex-1"
+
           />
           <a
             href={link}
