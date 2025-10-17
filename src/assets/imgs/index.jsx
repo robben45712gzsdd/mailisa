@@ -26,6 +26,10 @@ import bitmap2 from "@/assets/imgs/Bitmap-2.png";
 import noithat4_2 from "@/assets/imgs/noithat4.gif";
 import noithat3 from "@/assets/imgs/noithat3.gif";
 import noithat3_2 from "@/assets/imgs/noithat3.png.webp";
+import bgCustomer from "@/assets/imgs/customerbg.webp";
+import image9e02 from "@/assets/imgs/9e02.jpg";
+import image9e03 from "@/assets/imgs/9e03.jpg";
+import allDocterMagic03 from "@/assets/imgs/ALL-DOCTOR-MAGIC-03.png";
 export const images = {
   bannerDoctor,
   bannerWeb,
@@ -53,4 +57,8 @@ export const images = {
   noithat4_2,
   noithat3,
   noithat3_2,
+  bgCustomer,
+  image9e02,
+  image9e03,
+  allDocterMagic03,
 };
