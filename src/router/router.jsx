@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
+import SkinTreatmentPage from "../pages/SkinTreatmentPage/SkinTreatmentPage";
 // import About from "./pages/About/About";
 // import Services from "./pages/Services/Services";
 // import ServiceDetail from "./pages/Services/ServiceDetail";
@@ -10,6 +11,7 @@ function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/dieu-tri-da-tai-tham-my-vien-mailisa" element={<SkinTreatmentPage />} />
       {/* <Route path="/gioi-thieu" element={<About />} />
         <Route path="/dich-vu" element={<Services />} />
         <Route path="/dich-vu/:slug" element={<ServiceDetail />} />

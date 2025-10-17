@@ -15,11 +15,17 @@ export default function BoxService({ title, description, image, link }) {
           {title}
         </h3>
 
-        <p className="text-[#222222] text-[12px] leading-relaxed">{description}</p>
+        <p className="text-[#222222] text-[12px] leading-relaxed">
+          {description}
+        </p>
 
         {/* Buttons */}
         <div className="flex gap-4 pt-2">
-          <ButtonCustom text="Đăng ký phải" link="/services/brow-couture" />
+          <ButtonCustom
+            className="flex-1"
+            text="Đăng ký phải"
+            link="/services/brow-couture"
+          />
           <a
             href={link}
             className="flex flex-1 justify-center items-center bg-white hover:bg-pink-50 shadow-md hover:shadow-lg border-2 border-pink-600 rounded-full font-semibold text-pink-600 transition-all duration-300"

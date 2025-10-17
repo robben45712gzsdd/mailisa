@@ -177,10 +177,10 @@ export default function Header() {
   const [openSubMenu, setOpenSubMenu] = useState(null);
 
   return (
-    <header className="top-0 left-0 z-50 fixed bg-white shadow-md w-full">
+    <header className="top-0 left-0 z-50 fixed bg-white shadow-md w-full h-[130px]">
       <div className="flex flex-col items-center mx-auto px-8 max-w-[1400px]">
         <div
-          className="flex justify-center items-center bg-contain bg-no-repeat bg-center w-full h-[3.802rem] text-center"
+          className="flex justify-center items-center bg-contain bg-no-repeat bg-center w-full h-[4.5rem] text-center"
           style={{ backgroundImage: `url(${logoBg})` }}
         >
           <LogoIcon fill="#fff" className="w-[80px] h-auto" />
@@ -238,7 +238,8 @@ export default function Header() {
                 {menu.children && openMenu === i && (
                   <ul
                     style={{ backgroundImage: `url(${logoBgSubMenu})` }}
-                    className="top-[calc(100%+1rem)] left-0 z-50 absolute shadow-lg mt-0 py-2 border border-gray-100 rounded-md w-64 -translate-y-[1px] animate-fade-in"
+                    className="absolute top-full left-0 shadow-lg rounded-md mt-3 -translate-y-[1px] w-64 py-2 border border-gray-100 animate-fade-in z-50
+               before:content-[''] before:absolute before:top-[-12px] before:left-0 before:w-full before:h-4 before:bg-transparent"
                   >
                     {menu.children.map((submenu, j) => (
                       <li
