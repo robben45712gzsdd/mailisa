@@ -1,6 +1,6 @@
 import React from "react";
 function HomePage() {
-  return <div>Trang chủ</div>;
+  return <div className="h-[1500px] bg-gray-100">Trang chủ</div>;
 }
 
 export default HomePage;
