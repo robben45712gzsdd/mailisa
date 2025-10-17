@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow mt-[80px]">
+      <main className="flex-grow mt-[130px]">
         <AppRoutes />
       </main>
       <Footer />
