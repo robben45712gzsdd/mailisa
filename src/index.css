@@ -5,7 +5,6 @@
   /* Hồng đặc trưng Mailisa */
   --color-text-primary: #ffffff;
   --color-text-secondary: #7f143d;
-}
 
 @tailwind base;
 
@@ -13,7 +12,7 @@
 
 @tailwind utilities;
 
-@layer base {
+@layer utilities {
   .bg-primary {
     background-color: var(--color-primary);
   }
@@ -21,9 +20,15 @@
   .text-primary {
     color: var(--color-primary);
   }
-  
+
+  .text-primary-dark {
+    color: var(--color-primary-dark);
+  }
   .border-primary {
     border-color: var(--color-primary);
+  }
+  .border-primary-dark {
+    border-color: var(--color-primary-dark);
   }
 }
 
@@ -91,4 +96,12 @@ a {
 
 .animate-fade-in {
   animation: fade-in 0.2s ease-out;
+}
+
+.hover-text-primary:hover {
+  color: var(--color-primary);
+}
+/* Hover cho icon khi cùng group */
+.group:hover .group-hover-text-primary {
+  color: var(--color-primary);
 }
