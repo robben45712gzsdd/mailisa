@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 83.63 70">
+  <defs>
+    <style>.cls-1{fill:url(#New_Gradient_Swatch_5);}.cls-2{fill:url(#New_Gradient_Swatch_5-2);}</style>
+    <linearGradient id="New_Gradient_Swatch_5" y1="31.91" x2="83.63" y2="31.91" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3c1026"></stop>
+      <stop offset="0.5" stop-color="#d22d70"></stop>
+      <stop offset="1" stop-color="#c45780"></stop>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_5-2" x1="49.51" y1="55.02" x2="64.92" y2="55.02" xlink:href="#New_Gradient_Swatch_5"></linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="cls-1" d="M69.88,31.49a2.76,2.76,0,0,0-2.75-2.76H20.91a2.76,2.76,0,0,0,0,5.51H67.13A2.75,2.75,0,0,0,69.88,31.49Zm-49,8.25a2.75,2.75,0,0,0,0,5.5H40.06a2.75,2.75,0,0,0,0-5.5ZM51.72,23.23a2.75,2.75,0,0,0,0-5.5H34.11a2.75,2.75,0,0,0,0,5.5ZM79.23,0H4.4A4.4,4.4,0,0,0,0,4.4v55a4.4,4.4,0,0,0,4.4,4.4H46.21V55H15.41a6.6,6.6,0,0,0-6.61-6.6v-33A6.61,6.61,0,0,0,15.41,8.8H68.23a6.6,6.6,0,0,0,6.6,6.61v33a6.59,6.59,0,0,0-6.6,6.6h0v8.8h11a4.4,4.4,0,0,0,4.4-4.4V4.4A4.4,4.4,0,0,0,79.23,0Z"></path>
+      <path class="cls-2" d="M51.71,59.73V69a1,1,0,0,0,1.55.8l3.38-2.42a1,1,0,0,1,1.14,0l3.38,2.42a1,1,0,0,0,.57.18,1,1,0,0,0,1-1V59.73a13,13,0,0,1-11,0Zm5.5-4.28a7.71,7.71,0,1,0-7.7-7.71A7.71,7.71,0,0,0,57.21,55.45Z"></path>
+    </g>
+  </g>
+</svg>
