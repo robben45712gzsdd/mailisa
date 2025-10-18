@@ -78,6 +78,7 @@ import img1023 from "./1023.png";
 import img1122 from "./1122.png";
 import img7897 from "./78970.png";
 import Unt from "./Unt.png";
+import hoaHau3 from "./Hoahau-3.png.webp";
 
 export const images = {
   bannerDoctor,
@@ -157,5 +158,6 @@ export const images = {
   img1023,
   img1122,
   img7897,  
-  Unt
+  Unt,
+  hoaHau3
 };
