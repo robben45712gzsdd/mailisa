@@ -61,12 +61,34 @@ function Cosmetics() {
   const settingsIntroView = {
     infinite: true,
     speed: 1000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    centerMode: true,
     autoplay: true,
     arrows: false,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div>
@@ -77,7 +99,7 @@ function Cosmetics() {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 "
+          className="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10"
         >
           {dataService &&
             dataService.map((item, index) => (
@@ -92,50 +114,51 @@ function Cosmetics() {
 
       {/* kết quả sd kh */}
       <div
-        className="bg-cover bg-center bg-no-repeat w-full h-[600px] mt-10"
+        className="bg-cover bg-no-repeat bg-center mt-10 w-full h-[600px]"
         style={{ backgroundImage: `url(${images?.nhomSanPham})` }}
       >
-        <div className="container mt-10 py-10">
-          <div className="flex flex-col items-center justify-center gap-3">
+        <div className="mt-10 py-10 container">
+          <div className="flex flex-col justify-center items-center gap-3">
             <img src={images?.ketQuaKhachHang} alt="" />
-            <h2 className="text-white text-center text-2xl font-bold">
+            <h2 className="font-bold text-white text-2xl text-center">
               SỬ DỤNG MỸ PHẨM
             </h2>
           </div>
         </div>
         <Slider {...settingsIntroView}>
           {listIntroViews.map((item, index) => (
-            <div
-              key={index}
-              className="relative flex flex-col justify-between items-center bg-white rounded-xl shadow-md mx-2 p-4 min-h-[400px]"
-            >
-              {/* nhóm ảnh */}
-              <div className="flex justify-center gap-4 w-full h-[220px]">
-                {item.images.map((img, i) => (
-                  <div key={i} className="w-1/3">
-                    <img
-                      src={img}
-                      alt={`${item.title} - ${i}`}
-                      className="rounded-lg object-cover w-full h-full"
-                    />
-                  </div>
-                ))}
-              </div>
+            <div className="p-2" key={index}>
+              <div className="flex flex-col justify-between items-center gap-3 bg-white shadow-md mx-2 p-4 rounded-xl min-h-[400px]">
+                {/* nhóm ảnh */}
+                <div className="flex justify-center p-4 w-full h-[220px]">
+                  {item.images.map((img, i) => (
+                    <div key={i} className="w-1/3">
+                      <img
+                        src={img}
+                        alt={`${item.title} - ${i}`}
+                        className="rounded-lg w-full h-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
 
-              {/* tiêu đề & mô tả */}
-              <div className="mt-4 text-center">
-                <h2 className="font-bold text-2xl text-primary-dark uppercase">
-                  {item.title}
-                </h2>
-                <p className="text-primary italic text-sm mt-1">{item.desc}</p>
-              </div>
+                {/* tiêu đề & mô tả */}
+                <div className="mt-4 text-center">
+                  <h2 className="font-bold text-primary-dark text-2xl uppercase">
+                    {item.title}
+                  </h2>
+                  <p className="mt-1 text-primary text-sm italic">
+                    {item.desc}
+                  </p>
+                </div>
 
-              <button className="flex mt-5 items-center justify-center gap-2 px-10 py-3 rounded-full bg-gradient-to-r from-[#4A0024] to-[#D94B8E] text-white font-semibold tracking-wide shadow-md hover:opacity-90 transition w-full">
-                <span className="uppercase">Câu chuyện</span>
-                <span className="italic font-starcity text-white">
-                  Khách hàng
-                </span>
-              </button>
+                <button className="flex justify-center items-center gap-2 bg-gradient-to-r from-[#4A0024] to-[#D94B8E] hover:opacity-90 shadow-md mt-5 px-10 py-3 rounded-full w-full font-semibold text-white tracking-wide transition">
+                  <span className="uppercase">Câu chuyện</span>
+                  <span className="font-starcity text-white italic">
+                    Khách hàng
+                  </span>
+                </button>
+              </div>
             </div>
           ))}
         </Slider>
