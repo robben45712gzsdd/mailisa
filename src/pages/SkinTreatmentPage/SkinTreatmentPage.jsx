@@ -1,6 +1,9 @@
 import { images } from "@/assets/imgs";
 import OutstandingService from "@/components/OutstandingService";
 import Docter from "@/components/Docter";
+import MauMucMyPham from "@/components/MauMucMyPham";
+import NamSao from "../NamSao";
+import SlideHaTang from "@/components/SlideHaTang";
 // data service
 const dataService = [
   {
@@ -55,7 +58,9 @@ function SkinTreatmentPage() {
         {/* Cavs dịch vụ nổi bật tại MAILISA */}
         <OutstandingService data={dataService} />
         <Docter />
-        <p className="font-starcity">Xin chào</p>
+        <MauMucMyPham />
+        <NamSao />
+        <SlideHaTang slidesToShow={3} />
       </div>
     </div>
   );

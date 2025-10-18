@@ -32,6 +32,9 @@ import Artboard_8_2 from "./Artboard-8-2.png";
 import Artboard_11_1 from "./Artboard-11-1.png";
 import Artboard_10_1 from "./Artboard-10-1.png";
 import banerBacSiGiaLieu from "./BANNER-BAC-SI-DA-LIEU.jpg"
+import MauMucMyPham from "./maumucmypham.png";
+import MauMucMyPham2 from "./maumucmypham2.png";
+import NamSao from "./5sao.png";
 export const images = {
   bannerDoctor,
   bannerWeb,
@@ -64,5 +67,8 @@ export const images = {
   Artboard_8_2,
   Artboard_11_1,
   Artboard_10_1,
-  banerBacSiGiaLieu
+  banerBacSiGiaLieu,
+  MauMucMyPham,
+  MauMucMyPham2,
+  NamSao
 };
