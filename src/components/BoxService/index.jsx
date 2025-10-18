@@ -2,7 +2,7 @@ import ButtonCustom from "@/components/ButtonCustom";
 import { truncateText } from "@/utils/text";
 export default function BoxService({ title, description, image, link }) {
   return (
-    <div className="relative bg-gradient-to-br from-pink-50 to-purple-50 shadow-2xl mx-auto rounded-3xl w-full max-w-md overflow-hidden">
+    <div className="relative bg-gradient-to-br from-pink-50 to-purple-50 shadow-xl mx-auto rounded-3xl w-full max-w-md overflow-hidden">
       {/* Image Section */}
       <div className="relative h-64 overflow-hidden">
         <img src={image} alt={title} className="w-full h-full object-cover hover:scale-110 cursor-pointer" />

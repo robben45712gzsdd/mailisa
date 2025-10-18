@@ -178,7 +178,7 @@ export default function Header() {
 
   return (
     <header className="top-0 left-0 z-50 fixed bg-white shadow-md w-full h-[130px]">
-      <div className="flex flex-col items-center mx-auto px-8 max-w-[1400px]">
+      <div className="flex flex-col items-center mx-auto px-8 container">
         <div
           className="flex justify-center items-center bg-contain bg-no-repeat bg-center w-full h-[4.5rem] text-center"
           style={{ backgroundImage: `url(${logoBg})` }}

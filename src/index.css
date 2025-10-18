@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 
 :root {
   --color-primary: #e1006e;
@@ -7,11 +12,17 @@
   --color-text-secondary: #7f143d;
   --color-primary-dark: #7f143d;
 }
-@tailwind base;
 
-@tailwind components;
+@font-face {
+  font-family: "MTD Starcity";
+  src: url("@/assets/fonts/Starcity Script.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-starcity {
 
-@tailwind utilities;
+  font-family: "MTD Starcity", sans-serif;
+}
 
 @layer utilities {
   .bg-primary {
