@@ -53,15 +53,13 @@ const dataService = [
 function SkinTreatmentPage() {
   return (
     <div>
-      <div>
-        <img src={images?.banerBacSiGiaLieu} alt="" />
-        {/* Cavs dịch vụ nổi bật tại MAILISA */}
-        <OutstandingService data={dataService} />
-        <Docter />
-        <MauMucMyPham />
-        <NamSao />
-        <SlideHaTang slidesToShow={3} />
-      </div>
+      <img src={images?.banerBacSiGiaLieu} alt="" />
+      {/* Cavs dịch vụ nổi bật tại MAILISA */}
+      <OutstandingService data={dataService} />
+      <Docter />
+      <MauMucMyPham />
+      <NamSao />
+      <SlideHaTang slidesToShow={3} />
     </div>
   );
 }
