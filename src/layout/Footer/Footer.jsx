@@ -169,7 +169,7 @@ const Footer = () => {
       </style>
       <div className="container mx-auto">
         {/* Khung chứa tiêu đề + danh sách chi nhánh */}
-        <div className="border border-white rounded-[15px] py-15 px-40">
+        <div className="border border-white rounded-[15px] py-15 px-30">
           {/* Tiêu đề + nút */}
           <div className="text-center mb-8">
             <h2 className="text-[32px] font-bold uppercase mb-4">
@@ -209,7 +209,7 @@ const Footer = () => {
         {/* Liên hệ + Logo + Thời gian làm việc */}
         <div className="mt-20 flex flex-col md:flex-row items-end justify-between gap-8">
           {/* Cột liên hệ */}
-          <div className="flex-2 flex items-center md:items-start border-t border-b border-white pl-[30px] py-[12px]">
+          <div className="flex-2 flex items-center md:items-start border-t border-b border-white pl-[20px] py-[12px]">
             <h3 className="font-bold text-white uppercase tracking-wide text-lg mr-5">
               Liên hệ
             </h3>
@@ -235,7 +235,7 @@ const Footer = () => {
           </div>
 
           {/* Cột thời gian làm việc */}
-          <div className="flex-2 flex items-center md:items-end border-t border-b border-white pl-[30px] py-[12px]">
+          <div className="flex-2 flex items-center md:items-end border-t border-b border-white pl-[20px] py-[12px]">
             <h3 className="font-bold text-white uppercase tracking-wide text-lg mr-5">
               Thời gian làm việc
             </h3>
@@ -244,7 +244,7 @@ const Footer = () => {
         </div>
 
         {/* Menu footer */}
-        <ul className="relative flex flex-wrap justify-between items-center gap-x-10 gap-y-2 mt-10 text-xl text-white font-light">
+        <ul className="relative flex justify-between items-center gap-x-3 gap-y-2 mt-10 text-[18px] text-white font-light">
           {menuFooter?.map((item, i, arr) => (
             <li key={i} className="relative flex items-center">
               <a
