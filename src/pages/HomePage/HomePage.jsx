@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import { images } from "@/assets/imgs/index.jsx";
 import BoxService from "@/components/BoxService/index.jsx";
 import ButtonCustom from "@/components/ButtonCustom";
+import HeadingTitle from "@/components/HeadingTitle";
+import CustomerSection from "@/components/CustomerSection";
 function HomePage() {
   const settings = {
     infinite: true,
@@ -112,12 +114,26 @@ function HomePage() {
   const settingsIntroView = {
     infinite: true,
     speed: 1000,
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
     autoplay: true,
     arrows: false,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -285,9 +301,9 @@ function HomePage() {
             z-index: 10;
           }
         `}</style>
-        <div className="flex flex-col justify-center items-center py10 container">
+        <div className="flex flex-col justify-center items-center py10">
           <h1
-            className="pt-10 font-bold text-white text-2xl text-center uppercase"
+            className="pt-10 font-bold text-white text-2xl text-center uppercase container"
             data-aos="fade-right"
             data-aos-duration="1000"
             delay="200"
@@ -333,6 +349,25 @@ function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Customer  */}
+       <CustomerSection
+      backgroundImage={images.bgCustomer}
+      title="CẬN CẢNH KHÁCH HÀNG LÀM DỊCH VỤ TẠI MAILISA"
+      videoUrl="https://www.youtube.com/embed/UpnOtVd36D0?si=58bioOW3rKvX9xXg"
+      items={[
+        {
+          image: images.image9e02,
+          title: "Phun Môi Silk Lip Tại Mailisa",
+        },
+        {
+          image: images.image9e03,
+          title: "Phun Mày Đẹp Tự Nhiên Mailisa",
+        },
+      ]}
+      description={`Thành lập từ năm 1998, sau hơn 27 năm đứng vững trên thị trường,
+      thẩm mỹ viện Mailisa hiện đã trở thành một trong những thương hiệu thẩm mỹ viện chăm sóc sắc đẹp đáng tin cậy...`}
+    />
     </div>
   );
 }
