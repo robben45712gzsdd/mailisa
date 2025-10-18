@@ -31,10 +31,44 @@ import Artboard_7_1 from "./Artboard-7-1.png";
 import Artboard_8_2 from "./Artboard-8-2.png";
 import Artboard_11_1 from "./Artboard-11-1.png";
 import Artboard_10_1 from "./Artboard-10-1.png";
-import banerBacSiGiaLieu from "./BANNER-BAC-SI-DA-LIEU.jpg"
+import banerBacSiGiaLieu from "./BANNER-BAC-SI-DA-LIEU.jpg";
 import MauMucMyPham from "./maumucmypham.png";
 import MauMucMyPham2 from "./maumucmypham2.png";
 import NamSao from "./5sao.png";
+import bannerPhauThuat from "./BANNER-PHAU-THUAT.jpg";
+import Artboard_5_5 from "./Artboard-5-5.png";
+import Artboard_16 from "./Artboard-16.png";
+import Artboard_17 from "./Artboard-17.png";
+import Artboard_18 from "./Artboard-18.png";
+import Artboard_19 from "./Artboard-19.png";
+import Artboard_20 from "./Artboard-20.png";
+import tuvan1 from "./tuvan1.webp";
+import tuvan2 from "./tuvan2.webp";
+import FIXWEB_81 from "./FIXWEB-81.png.webp";
+import FIXWEB_82 from "./FIXWEB-82.png.webp";
+import tieuchuansao1 from "./Tieu-chuan-5-sao-1.png";
+import tieuchuansao4 from "./Tieu-chuan-5-sao-4.png.webp";
+import doingunhanvien from "./Doi-ngu-nhan-vien.jpg.webp";
+import bannerSanPham from "./BANNER-SAN-PHAM-1.jpg";
+import docterMagic from "./DOCTOR-MAGIC-1.png";
+import M49 from "./M49.jpg";
+import M67 from "./M67-serum-loai-bo-mun.jpg";
+import nhomSanPham from "./nhom-san-pham.jpg.webp";
+import ketQuaKhachHang from "./Ket-qua-khach-hang-1.png"
+import img1_3 from "./1-3.png"
+import img7_3 from "./7-3.png";
+import img8_2 from "./8-2.png";
+import img4_2 from "./4-2.png";
+import img5_2 from "./5-2.png";
+import img6_2 from "./6-2.png";
+import img7_4 from "./7-4.png";
+import img8_3 from "./8-3.png";
+import img4_3 from "./4-3.png";
+import img5_3 from "./5-3.png";
+import img6_3 from "./6-3.png";
+import img2_3 from "./2-3.png";
+import img3_3 from "./3-3.png";
+
 export const images = {
   bannerDoctor,
   bannerWeb,
@@ -70,5 +104,38 @@ export const images = {
   banerBacSiGiaLieu,
   MauMucMyPham,
   MauMucMyPham2,
-  NamSao
+  NamSao,
+  bannerPhauThuat,
+  Artboard_5_5,
+  Artboard_16,
+  Artboard_17,
+  Artboard_18,
+  Artboard_19,
+  Artboard_20,
+  tuvan1,
+  tuvan2,
+  FIXWEB_81,
+  FIXWEB_82,
+  tieuchuansao1,
+  tieuchuansao4,
+  doingunhanvien,
+  bannerSanPham,
+  docterMagic,
+  M49,
+  M67,
+  nhomSanPham,  
+  ketQuaKhachHang,
+  img1_3,
+  img7_3,
+  img8_2,
+  img4_2,
+  img5_2,
+  img6_2,
+  img7_4,
+  img8_3,
+  img4_3,
+  img5_3,
+  img6_3,
+  img2_3,
+  img3_3
 };
