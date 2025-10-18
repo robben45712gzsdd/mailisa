@@ -54,8 +54,8 @@ import docterMagic from "./DOCTOR-MAGIC-1.png";
 import M49 from "./M49.jpg";
 import M67 from "./M67-serum-loai-bo-mun.jpg";
 import nhomSanPham from "./nhom-san-pham.jpg.webp";
-import ketQuaKhachHang from "./Ket-qua-khach-hang-1.png"
-import img1_3 from "./1-3.png"
+import ketQuaKhachHang from "./Ket-qua-khach-hang-1.png";
+import img1_3 from "./1-3.png";
 import img7_3 from "./7-3.png";
 import img8_2 from "./8-2.png";
 import img4_2 from "./4-2.png";
@@ -68,6 +68,16 @@ import img5_3 from "./5-3.png";
 import img6_3 from "./6-3.png";
 import img2_3 from "./2-3.png";
 import img3_3 from "./3-3.png";
+import backGround from "./background.png";
+import bipMap7 from "./Bitmap-7.png";
+import bipMap8 from "./Bitmap-8.png";
+import bipMap9 from "./Bitmap-9.png";
+import img789 from "./789.png";
+import img0909 from "./0909.png";
+import img1023 from "./1023.png";
+import img1122 from "./1122.png";
+import img7897 from "./78970.png";
+import Unt from "./Unt.png";
 
 export const images = {
   bannerDoctor,
@@ -123,7 +133,7 @@ export const images = {
   docterMagic,
   M49,
   M67,
-  nhomSanPham,  
+  nhomSanPham,
   ketQuaKhachHang,
   img1_3,
   img7_3,
@@ -137,5 +147,15 @@ export const images = {
   img5_3,
   img6_3,
   img2_3,
-  img3_3
+  img3_3,
+  backGround,
+  bipMap7,
+  bipMap8,
+  bipMap9,
+  img789,
+  img0909,
+  img1023,
+  img1122,
+  img7897,  
+  Unt
 };
