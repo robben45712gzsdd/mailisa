@@ -91,7 +91,7 @@ function Cosmetics() {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 "
+          className="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10"
         >
           {dataService &&
             dataService.map((item, index) => (
@@ -112,10 +112,10 @@ function Cosmetics() {
           height: "max-content",
         }}
       >
-        <div className="container mt-10 py-10">
-          <div className="flex flex-col items-center justify-center gap-3">
+        <div className="mt-10 py-10 container">
+          <div className="flex flex-col justify-center items-center gap-3">
             <img src={images?.ketQuaKhachHang} alt="" />
-            <h2 className="text-white text-center text-2xl font-bold">
+            <h2 className="font-bold text-white text-2xl text-center">
               SỬ DỤNG MỸ PHẨM
             </h2>
           </div>
