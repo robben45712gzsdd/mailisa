@@ -79,6 +79,14 @@ import img1122 from "./1122.png";
 import img7897 from "./78970.png";
 import Unt from "./Unt.png";
 import hoaHau3 from "./Hoahau-3.png.webp";
+import daoTao from "./DAO-TAO-2.jpg";
+import bgdt_02_1 from "./bgdt-02-1.jpg";
+import lydo6 from "./6-ly-do.png.webp";
+import itemTrain1 from "./Artboard-10.png.webp"
+import itemTrain2 from "./Artboard-11.png.webp"
+import itemTrain3 from "./dao-tao-hoc-vien-1.jpg.webp"
+import trangdaotao from "./TRANG-DAO-TAO.jpg"
+
 
 export const images = {
   bannerDoctor,
@@ -157,7 +165,14 @@ export const images = {
   img0909,
   img1023,
   img1122,
-  img7897,  
+  img7897,
   Unt,
-  hoaHau3
+  hoaHau3,
+  daoTao,
+  bgdt_02_1,
+  lydo6,
+  itemTrain1,
+  itemTrain2,
+  itemTrain3,
+  trangdaotao
 };
