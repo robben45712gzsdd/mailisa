@@ -35,10 +35,6 @@ import banerBacSiGiaLieu from "./BANNER-BAC-SI-DA-LIEU.jpg"
 import MauMucMyPham from "./maumucmypham.png";
 import MauMucMyPham2 from "./maumucmypham2.png";
 import NamSao from "./5sao.png";
-import bgCustomer from "@/assets/imgs/customerbg.webp";
-import image9e02 from "@/assets/imgs/9e02.jpg";
-import image9e03 from "@/assets/imgs/9e03.jpg";
-import allDocterMagic03 from "@/assets/imgs/ALL-DOCTOR-MAGIC-03.png";
 export const images = {
   bannerDoctor,
   bannerWeb,
@@ -66,4 +62,13 @@ export const images = {
   noithat4_2,
   noithat3,
   noithat3_2,
+  Artboard_5_4,
+  Artboard_7_1,
+  Artboard_8_2,
+  Artboard_11_1,
+  Artboard_10_1,
+  banerBacSiGiaLieu,
+  MauMucMyPham,
+  MauMucMyPham2,
+  NamSao
 };
