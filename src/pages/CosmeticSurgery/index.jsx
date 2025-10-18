@@ -271,6 +271,69 @@ function CosmeticSurgery() {
         </div>
       </div>
 
+      {/* hoa hậu */}
+      <div className="flex flex-wrap md:flex-nowrap items-stretch w-full max-w-7xl mx-auto mt-10 px-6 gap-6">
+        {/* Cột trái (7 phần) */}
+        <div className="md:w-7/12 w-full flex flex-col items-center justify-center text-center">
+          <HeadingTitle title={"Đăng ký nhận tư vấn ngay"} />
+          <img
+            src={images?.hoaHau3}
+            alt="phun mày chạm hạt sương bay"
+            className="w-full h-auto object-contain rounded-lg"
+            loading="lazy"
+          />
+        </div>
+
+        {/* Cột phải (5 phần) */}
+        <div
+          className="md:w-5/12 w-full h-auto bg-cover bg-center rounded-[1.5rem] p-8 flex flex-col justify-center text-center"
+          style={{ backgroundImage: `url(${images?.doingunhanvien})` }}
+        >
+          <h2 className="text-white text-3xl md:text-4xl font-bold mb-8 leading-tight">
+            ĐĂNG KÝ <br /> NHẬN TƯ VẤN
+          </h2>
+
+          <form className="flex flex-col items-center space-y-4 w-full">
+            {/* Ô nhập Họ & Tên */}
+            <input
+              type="text"
+              placeholder="Họ & Tên"
+              className="w-full bg-white text-gray-800 placeholder-gray-400 p-4 rounded-xl focus:ring-2 focus:ring-pink-400 outline-none text-base"
+              required
+            />
+
+            {/* Ô nhập Số điện thoại */}
+            <input
+              type="tel"
+              placeholder="Số điện thoại của bạn"
+              className="w-full bg-white text-gray-800 placeholder-gray-400 p-4 rounded-xl focus:ring-2 focus:ring-pink-400 outline-none text-base"
+              required
+            />
+
+            {/* Khung recaptcha giả định */}
+            <div className="w-full bg-white rounded-xl py-4 px-6 flex items-center justify-between text-gray-600 text-sm shadow-sm">
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 border border-gray-400 rounded-sm"></div>
+                <span>I’m not a robot</span>
+              </div>
+              <img
+                src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                alt="reCAPTCHA"
+                className="h-6"
+              />
+            </div>
+
+            {/* Nút đặt lịch */}
+            <button
+              type="submit"
+              className="w-full bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white font-bold py-4 rounded-xl shadow-lg hover:opacity-90 transition"
+            >
+              ĐẶT LỊCH NGAY
+            </button>
+          </form>
+        </div>
+      </div>
+
       {/* <MauMucMyPham />
       <NamSao />
       <SlideHaTang slidesToShow={3} /> */}
