@@ -4,6 +4,7 @@ import { images } from "@/assets/imgs/index.jsx";
 import BoxService from "@/components/BoxService/index.jsx";
 import ButtonCustom from "@/components/ButtonCustom";
 import HeadingTitle from "@/components/HeadingTitle";
+import CustomerSection from "@/components/CustomerSection";
 function HomePage() {
   const settings = {
     infinite: true,
@@ -113,12 +114,26 @@ function HomePage() {
   const settingsIntroView = {
     infinite: true,
     speed: 1000,
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
     autoplay: true,
     arrows: false,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -286,9 +301,9 @@ function HomePage() {
             z-index: 10;
           }
         `}</style>
-        <div className="flex flex-col justify-center items-center py10 container">
+        <div className="flex flex-col justify-center items-center py10">
           <h1
-            className="pt-10 font-bold text-white text-2xl text-center uppercase"
+            className="pt-10 font-bold text-white text-2xl text-center uppercase container"
             data-aos="fade-right"
             data-aos-duration="1000"
             delay="200"
@@ -336,56 +351,23 @@ function HomePage() {
       </div>
 
       {/* Customer  */}
-      <div
-        className={`bg-[url(${images.bgCustomer})] bg-no-repeat bg-cover bg-center`}
-      >
-        <div className="py-12 container">
-          <HeadingTitle title={"CẬN CẢNH KHÁCH HÀNG LÀM DỊCH VỤ TẠI MAILISA"} />
-          {/* Add customer reviews or testimonials here */}
-          <div className="flex gap-5 mt-10 max-h-[400px]">
-            <div className="flex-2 aspect-[4/3">
-              <iframe
-                loading="lazy"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/UpnOtVd36D0?si=58bioOW3rKvX9xXg"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen=""
-                data-rocket-lazyload="fitvidscompatible"
-                className="lazyloaded rounded-2xl w-full h-full"
-                data-ll-status="loaded"
-              ></iframe>
-            </div>
-            <div className="flex-1 overflow-y-auto gap-2">
-              <div className="w-full flex flex-col items-center mb-4 curosor-pointer">
-                <img src={images.image9e02} alt="Customer Review 1" />
-                <p className="mt-4 text-center font-bold text-primary-dark text-sm leading-6 tracking-wide">
-                  Phun Môi Silk Lip Tại Mailisa
-                </p>
-                <span className="hr w-20 mt-4"></span>
-              </div>
-              <div className="w-full flex flex-col items-center mb-4 curosor-pointer">
-                <img src={images.image9e03} alt="Customer Review 2" />
-                <p className="mt-4 text-center font-bold text-primary-dark text-sm leading-6 tracking-wide">
-                  Phun Mày Đẹp Tự Nhiên Mailisa
-                </p>
-                <span className="hr w-20 mt-4"></span>
-              </div>
-            </div>
-          </div>
-          <p className={"mt-10 text-primary-dark text-sm leading-6 tracking-wide"}>
-            Thành lập từ năm 1998, sau hơn 27 năm đứng vững trên thị trường,
-            thẩm mỹ viện Mailisa hiện đã trở thành một trong những thương hiệu
-            thẩm mỹ viện chăm sóc sắc đẹp, một địa chỉ đáng tin cậy, hội tụ đủ 6
-            tiêu chí: Công nghệ thẩm mỹ hiện đại, quy tụ đội ngũ bác sĩ thẩm mỹ
-            giỏi, dịch vụ thẩm mỹ hoàn hảo. Trong suốt thời gian qua, Mailisa
-            luôn là điểm đến chăm sóc sắc đẹp đáng tin cậy của khách hàng.
-          </p>
-        </div>
-      </div>
+       <CustomerSection
+      backgroundImage={images.bgCustomer}
+      title="CẬN CẢNH KHÁCH HÀNG LÀM DỊCH VỤ TẠI MAILISA"
+      videoUrl="https://www.youtube.com/embed/UpnOtVd36D0?si=58bioOW3rKvX9xXg"
+      items={[
+        {
+          image: images.image9e02,
+          title: "Phun Môi Silk Lip Tại Mailisa",
+        },
+        {
+          image: images.image9e03,
+          title: "Phun Mày Đẹp Tự Nhiên Mailisa",
+        },
+      ]}
+      description={`Thành lập từ năm 1998, sau hơn 27 năm đứng vững trên thị trường,
+      thẩm mỹ viện Mailisa hiện đã trở thành một trong những thương hiệu thẩm mỹ viện chăm sóc sắc đẹp đáng tin cậy...`}
+    />
     </div>
   );
 }
